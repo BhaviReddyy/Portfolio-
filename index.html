@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <title>Bhavya Portfolio</title>
 
-    <!-- Tailwind CSS -->
+    <!-- Tailwind -->
     <script src="https://cdn.tailwindcss.com"></script>
 
     <!-- Font -->
@@ -19,6 +19,12 @@
             scroll-behavior: smooth;
         }
     </style>
+
+    <!-- AOS Animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 
 <body class="bg-gray-50 text-gray-800">
@@ -28,36 +34,40 @@
         <div class="max-w-5xl mx-auto flex justify-between items-center p-5">
             <h1 class="font-bold text-lg">Bhavya</h1>
             <div class="space-x-6 text-gray-600">
-                <a href="#home" class="hover:text-indigo-600 transition">Home</a>
-                <a href="#projects" class="hover:text-indigo-600 transition">Projects</a>
-                <a href="#contact" class="hover:text-indigo-600 transition">Contact</a>
+                <a href="#home" class="hover:text-indigo-600">Home</a>
+                <a href="#projects" class="hover:text-indigo-600">Projects</a>
+                <a href="#contact" class="hover:text-indigo-600">Contact</a>
             </div>
         </div>
     </nav>
 
     <!-- Hero -->
     <section id="home" class="text-center py-32 bg-gradient-to-r from-indigo-50 to-purple-100">
+
+        <!-- Profile Image -->
+        <img src="https://avatars.githubusercontent.com/u/000000?v=4" class="w-32 h-32 mx-auto rounded-full shadow-lg mb-6">
+
         <h1 class="text-5xl md:text-6xl font-bold">
             Hi, I'm <span class="text-indigo-600">Bhavya</span> 👋
         </h1>
 
         <p class="mt-6 text-lg text-gray-600">
-            Aspiring Software Engineer | Full Stack Developer
+            Final Year B.Tech Student | Web Developer
         </p>
 
         <div class="mt-8 space-x-4">
-            <a href="#projects" class="px-8 py-3 bg-indigo-600 text-white rounded-xl shadow hover:bg-indigo-700 transition">
+            <a href="#projects" class="px-8 py-3 bg-indigo-600 text-white rounded-xl shadow hover:scale-105 transition">
       View Projects
     </a>
 
-            <a href="https://drive.google.com/file/d/16k9zQ_zFgReIq7d4F16c7SF01vTcBM69/view?usp=sharing" target="_blank" class="px-8 py-3 border border-gray-300 rounded-xl hover:bg-gray-100 transition">
+            <a href="https://drive.google.com/file/d/16k9zQ_zFgReIq7d4F16c7SF01vTcBM69/view?usp=sharing" target="_blank" class="px-8 py-3 border rounded-xl hover:bg-gray-100 transition">
       Resume
     </a>
         </div>
     </section>
 
     <!-- About -->
-    <section class="bg-white py-16">
+    <section class="bg-white py-16" data-aos="fade-up">
         <div class="max-w-5xl mx-auto px-6 text-center">
             <h2 class="text-3xl font-bold">About Me</h2>
             <p class="mt-4 text-gray-600">
@@ -67,23 +77,23 @@
     </section>
 
     <!-- Skills -->
-    <section class="bg-gray-50 py-16">
+    <section class="bg-gray-50 py-16" data-aos="fade-up">
         <div class="max-w-5xl mx-auto px-6">
             <h2 class="text-3xl font-bold text-center">Skills</h2>
 
             <div class="grid md:grid-cols-3 gap-6 mt-10">
 
-                <div class="bg-white p-6 rounded-2xl shadow hover:shadow-xl transition">
+                <div class="bg-white p-6 rounded-2xl shadow hover:scale-105 transition">
                     <h3 class="font-semibold">Languages</h3>
                     <p class="text-gray-600 mt-2">Python, SQL, JavaScript</p>
                 </div>
 
-                <div class="bg-white p-6 rounded-2xl shadow hover:shadow-xl transition">
+                <div class="bg-white p-6 rounded-2xl shadow hover:scale-105 transition">
                     <h3 class="font-semibold">Web</h3>
                     <p class="text-gray-600 mt-2">HTML, CSS, React</p>
                 </div>
 
-                <div class="bg-white p-6 rounded-2xl shadow hover:shadow-xl transition">
+                <div class="bg-white p-6 rounded-2xl shadow hover:scale-105 transition">
                     <h3 class="font-semibold">Tools</h3>
                     <p class="text-gray-600 mt-2">Git, GitHub, VS Code</p>
                 </div>
@@ -93,43 +103,40 @@
     </section>
 
     <!-- Projects -->
-    <section id="projects" class="bg-white py-16">
+    <section id="projects" class="bg-white py-16" data-aos="fade-up">
         <div class="max-w-5xl mx-auto px-6">
             <h2 class="text-3xl font-bold text-center">Projects</h2>
 
             <div class="grid md:grid-cols-2 gap-6 mt-10">
 
-                <!-- Gardening Planner -->
                 <div class="bg-white p-6 rounded-2xl shadow-md hover:shadow-xl transition border">
                     <h3 class="text-xl font-semibold">Gardening Planner</h3>
                     <p class="text-gray-600 mt-3">
-                        Full stack app with JWT authentication and CRUD features.
+                        Full stack app with authentication and CRUD features.
                     </p>
                     <div class="mt-4 flex gap-4">
-                        <a href="https://gardening-guide.netlify.app/signin" target="_blank" class="text-indigo-600 font-medium hover:underline">Live →</a>
+                        <a href="https://gardening-guide.netlify.app/signin" target="_blank" class="text-indigo-600 hover:underline">Live →</a>
                         <a href="https://github.com/BhaviReddyy" target="_blank" class="text-gray-500 hover:underline">GitHub</a>
                     </div>
                 </div>
 
-                <!-- Deloitte -->
                 <div class="bg-white p-6 rounded-2xl shadow-md hover:shadow-xl transition border">
                     <h3 class="text-xl font-semibold">Deloitte Data Analytics</h3>
                     <p class="text-gray-600 mt-3">
                         Data analysis using Excel and Python with dashboards.
                     </p>
-                    <div class="mt-4 flex gap-4">
-                        <a href="https://github.com/BhaviReddyy" target="_blank" class="text-indigo-600 font-medium hover:underline">View →</a>
+                    <div class="mt-4">
+                        <a href="https://github.com/BhaviReddyy" target="_blank" class="text-indigo-600 hover:underline">View →</a>
                     </div>
                 </div>
 
-                <!-- BuySmart -->
                 <div class="bg-white p-6 rounded-2xl shadow-md hover:shadow-xl transition border">
                     <h3 class="text-xl font-semibold">BuySmart UI</h3>
                     <p class="text-gray-600 mt-3">
                         Responsive e-commerce UI using HTML, CSS, JS.
                     </p>
                     <div class="mt-4 flex gap-4">
-                        <a href="https://mega-mart-clone.netlify.app/" target="_blank" class="text-indigo-600 font-medium hover:underline">Live →</a>
+                        <a href="https://mega-mart-clone.netlify.app/" target="_blank" class="text-indigo-600 hover:underline">Live →</a>
                         <a href="https://github.com/BhaviReddyy" target="_blank" class="text-gray-500 hover:underline">GitHub</a>
                     </div>
                 </div>
@@ -139,18 +146,33 @@
     </section>
 
     <!-- Contact -->
-    <section id="contact" class="bg-gray-50 py-16">
+    <section id="contact" class="bg-gray-50 py-16" data-aos="fade-up">
         <div class="max-w-5xl mx-auto px-6 text-center">
             <h2 class="text-3xl font-bold">Contact</h2>
 
             <p class="mt-4 text-gray-600">📧 bhavyareddy506@gmail.com</p>
 
-            <div class="mt-4 space-x-6">
-                <a href="https://www.linkedin.com/in/yata-bhavya-aa0a66272/" target="_blank" class="text-indigo-600 hover:underline">LinkedIn</a>
-                <a href="https://github.com/BhaviReddyy" target="_blank" class="text-indigo-600 hover:underline">GitHub</a>
+            <div class="mt-6 space-x-6 text-2xl">
+                <a href="https://www.linkedin.com/in/yata-bhavya-aa0a66272/" target="_blank">
+                    <i class="fab fa-linkedin text-blue-600"></i>
+                </a>
+                <a href="https://github.com/BhaviReddyy" target="_blank">
+                    <i class="fab fa-github text-gray-800"></i>
+                </a>
             </div>
         </div>
     </section>
+
+    <!-- Footer -->
+    <footer class="bg-white text-center py-6 text-gray-500">
+        © 2026 Bhavya | Built with ❤️
+    </footer>
+
+    <!-- AOS Init -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 
 </body>
 
